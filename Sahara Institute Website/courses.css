@@ -1,0 +1,50 @@
+body {
+    padding: 40px 0;
+    background-image: url("img13.jpg");
+  }
+  
+  .grid {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+  }
+  
+  .grid > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  }
+  
+  .grid > article img {
+    max-width: 100%;
+  }
+  
+  .grid .text {
+    padding: 20px;
+  }
+  
+  .courses-title h2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 110px;
+      height: 2px;
+      background: #fc6701;
+      bottom: -25px;
+      margin: auto;
+      right: 0;
+  }
+  
+   .course-title h2 {
+      position: relative;
+      margin-bottom: 45px;
+      display: inline-block;
+      font-weight: 600;
+      line-height: 1;
+  }
+  
+  ul.list{
+      list-style-type: circle;
+      color: black;    
+  }
